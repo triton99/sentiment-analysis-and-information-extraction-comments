@@ -21,11 +21,12 @@ We automatically collect factual data from Vietnamese e-commerce sites and categ
 #### Our Dataset
 Our dataset focuses mainly on the fashion industry on the e-commerce platform [Tiki](https://tiki.vn/). This dataset contains 3791 comments separated by 3 classes (Positive, Neutral, Negative) and tagged by sequence (Design, Price). 
 
-Link download dataset [here](...).
+Link download dataset [here](https://drive.google.com/drive/folders/1A_BGOEztTtxi1zjE7UF_Z7mBhTh_ZABE?usp=sharing).
 
 #### Joint model
 The structure of the proposed joint model:
-![The structure of the proposed joint model](***)
+
+<img src="/images/joint_model.png" width="600" height="300" />
 
 
 ## 2. Install the required libraries
@@ -46,6 +47,8 @@ To install the above libraries, execute the following command:
 >`pip install -r requirements.txt`
 
 ## 3. Running demo
+Download [checkpoint](https://drive.google.com/file/d/1SEJbZJIO3crQibZrf0xoKfQCrs_YJH4A/view?usp=sharing) of our model and put it to `checkpoints` folder.
+
 Clone this repo and go to the home directory:
 > `git clone https://github.com/triton99/sentiment-analysis-and-information-extraction-comments.git`
 
@@ -56,23 +59,23 @@ Install the vncorenlp python wrapper
 
 Download VnCoreNLP-1.1.1.jar & its word segmentation component
 > `mkdir -p vncorenlp/models/wordsegmenter`
-
+>
 > `wget https://raw.githubusercontent.com/vncorenlp/VnCoreNLP/master/VnCoreNLP-1.1.1.jar`
-
+>
 > `wget https://raw.githubusercontent.com/vncorenlp/VnCoreNLP/master/models/wordsegmenter/vi-vocab`
-
+>
 > `wget https://raw.githubusercontent.com/vncorenlp/VnCoreNLP/master/models/wordsegmenter/wordsegmenter.rdr`
-
+>
 > `mv VnCoreNLP-1.1.1.jar vncorenlp/ `
-
+>
 > `mv vi-vocab vncorenlp/models/wordsegmenter/`
-
+>
 > `mv wordsegmenter.rdr vncorenlp/models/wordsegmenter/`
 
 Download ngrok
 
 > `wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip`
-
+>
 > `unzip ngrok-stable-linux-amd64.zip`
 
 Run command system
@@ -90,7 +93,7 @@ Run demo
 ### Demo result
 You can access Tiki website, get your favorite product link and paste it to search bar.
 
-![Example result of demo](***)
+<img src="/images/demo.jpeg" width="800" height="350" />
 
 
 ## 4. Evaluation
