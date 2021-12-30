@@ -51,7 +51,7 @@ Download [checkpoint](https://drive.google.com/file/d/1SEJbZJIO3crQibZrf0xoKfQCr
 
 Clone this repo and go to the home directory:
 > `git clone https://github.com/triton99/sentiment-analysis-and-information-extraction-comments.git`
-
+>
 > `cd sentiment-analysis-and-information-extraction-comments`
 
 Install the vncorenlp python wrapper
@@ -74,7 +74,7 @@ Download VnCoreNLP-1.1.1.jar & its word segmentation component
 
 Download pre-trained model PhoBERT_base_transformers
 > `wget https://public.vinai.io/PhoBERT_base_transformers.tar.gz`
-
+>
 > `tar -xzvf PhoBERT_base_transformers.tar.gz`
 
 Download ngrok
@@ -83,8 +83,8 @@ Download ngrok
 > `unzip ngrok-stable-linux-amd64.zip`
 
 Run command system
-> 'get_ipython().system_raw('./ngrok authtoken [YourAuthtoken]')'
-
+> `get_ipython().system_raw('./ngrok authtoken [YourAuthtoken]')`
+>
 > `get_ipython().system_raw('./ngrok http 8501 &')`
 
 Get demo link
