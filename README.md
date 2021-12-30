@@ -72,8 +72,12 @@ Download VnCoreNLP-1.1.1.jar & its word segmentation component
 >
 > `mv wordsegmenter.rdr vncorenlp/models/wordsegmenter/`
 
-Download ngrok
+Download pre-trained model PhoBERT_base_transformers
+> `wget https://public.vinai.io/PhoBERT_base_transformers.tar.gz`
 
+> `tar -xzvf PhoBERT_base_transformers.tar.gz`
+
+Download ngrok
 > `wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip`
 >
 > `unzip ngrok-stable-linux-amd64.zip`
