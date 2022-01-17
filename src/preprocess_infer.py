@@ -212,6 +212,9 @@ def process_df(df):
     df1["count"]= df1["token"].apply(get_max_str)
     df1['len'] = df1['count'].apply(len)
     df1.drop(['text_prep', 'token', 'count', 'len', 'content'], axis=1, inplace = True)
+    df1['text_prep2'] = df1['text_prep2'].apply(replace_all, 
+                                       dic = dict_vn2)
+    
     return df1
 
 dicchar = loaddicchar()
@@ -220,3 +223,5 @@ nguyen_am_to_ids = {}
 for i in range(len(bang_nguyen_am)):
     for j in range(len(bang_nguyen_am[i]) - 1):
         nguyen_am_to_ids[bang_nguyen_am[i][j]] = (i, j)
+        
+
